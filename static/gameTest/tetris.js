@@ -298,6 +298,6 @@ class Tetris{
 
   importArenaPlayer(arenaTemp, playerTemp){
     this.arena = arenaTemp;
-    this.player = playerTemp;
+    // this.player = playerTemp;
   }
 }

@@ -290,7 +290,7 @@ class Tetris{
       // this.arena.forEach(row => row.fill(0));
       // this.player.score = 0;
       // this.updateScore();
-      if(this.running && this.done != null) this.done(this.player.score);
+      if(this.running && this.done != null) this.done(this.player.score, this.id);
       this.running = false;
     }
     if(this.updateCallback != null) this.updateCallback(this.arena, this.player);

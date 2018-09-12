@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/the42ndturtle/tetris/issues"
   },
-  "homepage": "https://github.com/the42ndturtle/tetris#readme"
+  "homepage": "https://github.com/the42ndturtle/tetris#readme",
+  "devDependencies": {
+    "ws": "3.3.2"
+  }
 }

@@ -19,5 +19,11 @@
   "homepage": "https://github.com/the42ndturtle/tetris#readme",
   "devDependencies": {
     "ws": "3.3.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.1.1"
   }
 }

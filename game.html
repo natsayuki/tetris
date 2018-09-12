@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tetris room</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="gameTest/tetris.js"></script>
+    <script src="game.js"></script>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div id="nameWrapper">
+      <h1 id="messageText">asdf</h1>
+      <h1>Pick A Name</h1>
+      <input id="nameIn" maxlength="12" />
+      <div id="nameEnter">
+        <h1>Enter</h1>
+      </div>
+    </div>
+    <h1 id="roomKeyText"></h1>
+    <div id="mainWrapper">
+      <h1>Waiting to start game</h1>
+      <div id="playerWrapper">
+
+      </div>
+      <div id='start'>
+        <h1>Start</h1>
+      </div>
+    </div>
+    <div id="gameWrapper">
+      <div id="mainTetrisWrapper"></div>
+      <div id="othersWrapper">
+
+      </div>
+    </div>
+
+  </body>
+</html>

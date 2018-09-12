@@ -1,0 +1,114 @@
+#nameWrapper{
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 3;
+}
+#nameIn{
+  transform: scale(2);
+  text-align: center;
+}
+#nameEnter{
+  background-color: lightgrey;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#messageText{
+  opacity: 0;
+}
+.playerName{
+  opacity: 0;
+  transform: scale(0);
+  transition: all 1s;
+  margin: 1.5rem;
+}
+#playerWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appear{
+  transition: all 1s;
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+#mainWrapper{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background-color: white;
+}
+#start{
+  display: none;
+  background-color: lightgrey;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.startLeader{
+  display: block !important;
+}
+#gameWrapper{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#roomKeyText{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 4;
+}
+#othersWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mainTetrisWrapper{
+  transform: scale(1.3);
+  margin-right: 2rem;
+}
+.tetrisInstance{
+  margin: 1rem;
+}
+
+/* animations */
+.fade{
+  animation-name: fadeMessage;
+  animation-duration: 5s;
+}
+@keyframes fadeMessage{
+  0%{opacity: 0;}
+  5%{opacity: 1;}
+  95%{opacity: 1;}
+  100%{opacity: 0;}
+}
+.dissapear{
+  animation-name: fadeOut;
+  animation-duration: .5s;
+  opacity: 0 !important;
+  display: none !important;
+}
+@keyframes fadeOut{
+  0%{opacity: 1}
+  99%{opacity: 0}
+  100%{display: none}
+}

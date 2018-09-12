@@ -1,0 +1,43 @@
+#createRoom{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+#joinRoomWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px
+}
+#joinRoom, #createRoom{
+  background-color: lightgrey;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+#joinRoom:active, #createRoom:active{
+  background-color: grey;
+}
+#roomKeyIn{
+  transform: scale(2);
+  text-align: center;
+}
+#messageText{
+  opacity: 0;
+}
+.fade{
+  animation-name: fadeMessage;
+  animation-duration: 2s;
+}
+
+@keyframes fadeMessage{
+  0%{opacity: 0;}
+  5%{opacity: 1;}
+  95%{opacity: 1;}
+  100%{opacity: 0;}
+}

@@ -81,6 +81,8 @@ io.on('connection', (socket) => {
 
 app.use(express.static("static"));
 
-server.listen(3000, () => {
+let port = process.env.PORT || 3000;
+
+server.listen(port, () => {
   console.log("server up on port 3000");
 });

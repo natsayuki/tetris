@@ -24,7 +24,7 @@ app.get('/room', (req, res) => {
   let key = req.query.key;
   console.log('joining room ' + key);
   if(Object.keys(lobbys).indexOf(key) != -1) res.sendFile(path.resolve('game.html'));
-  else res.sendFile('ohno.html');
+  else res.sendFile(path.resolve('ohno.html'));
 });
 
 app.get('/createRoom', (req, res) => {

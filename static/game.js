@@ -150,6 +150,10 @@ $(document).ready(function(){
     }
     Object.keys(otherPlayers).forEach(id => {
       otherPlayers[id].build();
+      data.players.forEach(player => {
+        console.log(`#tetrisInstancetetris${player.id}`);
+        if(parseInt(player.id) == parseInt(id)) $(`#tetrisInstancetetris${player.id}`).append(`<h1>${player.name}</h1>`);
+      });
     });
     mainTetris = new Tetris(`mainTetris`, '#mainTetrisWrapper', done, updateCallback, data.pieces);
     mainTetris.build();
@@ -168,7 +172,8 @@ $(document).ready(function(){
   });
   socket.on('update', (data) => {
     if(data.room == key && data.id != id){
-      otherPlayers[data.id].importArenaPlayer(data.arena, arena.player);
+      console.log(data);
+      otherPlayers[data.id].importArenaPlayer(data.arena, data.player);
     }
   });
 });

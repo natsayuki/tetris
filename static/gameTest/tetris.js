@@ -6,7 +6,7 @@ class Tetris{
     this.updateCallback = updateCallback || null;
     this.pieceString = pieceString || this.makePieceString();
     this.tag = `
-    <div class="tetrisInstance">
+    <div class="tetrisInstance" id="tetrisInstance${this.id}">
       <h1 id="score${id}"></h1>
       <canvas id="${id}" width="240" height="400"></canvas>
     </div>
